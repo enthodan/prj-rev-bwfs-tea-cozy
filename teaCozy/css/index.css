@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+/* CSS is listed in order as they appear on html page */
+
+/* ------universal---------- */
+
+* {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seaShell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  list-style: none;
+
+}
+
+html {
+  /* height: 100%; */
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+}
+
+/* ---------header--------------------- */
+
+header {
+  display: flex;
+  height: 69px;
+  border-bottom: 1px solid seaShell;
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+  padding: 8px auto;
+
+}
+
+img {
+  align-self: center;
+
+}
+
+nav {
+  display: flex;
+  width: 100%;
+
+}
+
+nav ul{
+  width: 100%;
+  justify-content: flex-end;
+  text-align: right;
+
+}
+
+ header img {
+  margin-left: 10px;
+  justify-content: flex-start;
+
+}
+
+header nav ul li {
+  display: inline-block;
+  text-decoration: underline;
+  justify-content: space-around;
+  margin-right: 20px;
+  align-items: center;
+
+}
+
+/* ------------main--------------- */
+
+/* all children of main content is a flex item */
+.columnStack {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 80px;
+  min-height: 10vh;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* first item AKA background image and title  */
+
+.firstItem {
+  width: 1200px;
+  min-height: 100vh;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  align-self: center;
+  display: flex;
+
+}
+
+/* second item AKA menu items */
+
+.teaMonth /* AKA secondItem */ {
+  /* all items in this class is a flex item */
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  width: 90vw;
+  min-height: 10vh;
+  overflow:visible;
+
+}
+
+.backgroundText {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+
+}
+
+.backgroundText h2, .backgroundText h4 {
+  margin: 0 0;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+
+}
+
+.backgroundText h2, h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+
+}
+
+.backgroundText h4, h4 {
+  font-size: 1.12rem;
+
+}
+
+
+
+.rowFlex {
+  /* all items in this class is a flex item */
+
+  /* nested in class teaMonth (which is a parent flexbox) */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 0px;
+  overflow: visible;
+  align-items: center;
+  justify-content: center;
+
+}
+
+figure {
+  margin: 20px;
+
+}
+
+
+figure img {
+  /* nested in .rowFlex */
+  margin: auto 10px;
+  justify-content: center;
+  align-content: center;
+  height: 200px;
+  width: 300px;
+
+}
+
+/* third item AKA locations of stores */
+
+.thirdItem {
+  background-image: url(../images/location.jpg);
+  width: 1200px;
+  height: 500px;
+
+}
+
+.locTitle {
+  font-size: 1.5rem;
+  background: none;
+  color: white;
+
+}
+
+.locListing {
+  display: flex;
+  background: none;
+  justify-content: space-around;
+}
+
+.location {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.location p {
+  height: 100%;
+
+}
+
+/* fourth item AKA contact information */
+
+.fourthItem {
+  min-height: 200px;
+}
+
+.fourthItem h5 {
+  font-size: .83rem;
+}
+
+/* footer AKA fifth item */
+
+footer {
+  text-align: left;
+  margin-top: 40px;
+  margin-left: 20px;
+  align-self: flex-start;
+}
+
+footer h5 {
+  font-size: .83em;
+}

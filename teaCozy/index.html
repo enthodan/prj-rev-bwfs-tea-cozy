@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tea Cozy</title>
+    <link href="css/index.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- header on top, which is fixed -->
+    <header>
+      <!-- logo image -->
+      <img src="./images/teaLogo.png" alt="Logo for Tea Cozy" height="50px" width="auto">
+<!-- navigation bar -->
+      <nav>
+        <ul>
+          <a href="#"><li>Mission</li></a>
+          <a href="#"><li>Featured Tea</li></a>
+          <a href="#"><li>Locations</li></a>
+        </ul>
+      </nav>
+    </header>
+<!-- end of header, start of main content -->
+<!-- all items of main content is a flex item -->
+      <div class="columnStack"><!-- flex parent -->
+
+        <!-- flex item of columnStack -->
+        <section class="firstItem">
+          <div class="backgroundText"><!-- flex parent -->
+            <h2 class="text">Our Mission</h2><!-- flex child -->
+            <h4 class="text">Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4><!-- flex child -->
+          </div>
+        </section>
+
+        <!-- flex item of columnStack -->
+        <section class="teaMonth secondItem"><!-- also a flex parent -->
+          <!-- all items in teaMonth is a flex item -->
+          <div> <!--flex item for teaMonth -->
+            <h2>Tea of the Month</h2>
+            <h4>What's Steeping at The Tea Cozy?</h4>
+          </div>
+
+          <!--flex item for teaMonth -->
+          <div class="rowFlex"><!--flex parent -->
+            <!-- all figures are flex-children of rowFlex -->
+
+            <figure><!--flex item for rowFlex-->
+              <img src="images/berry.jpg" alt="A coffee cup with berries" height="200px" width="300px">
+              <figcaption>Fall Berry Blitz Tea</figcaption>
+            </figure>
+
+            <figure><!--flex item for rowFlex -->
+            <img src="images/rum.jpg" alt="An open crate with crumbs surrounding it" height="200px" width="300px">
+            <figcaption>Spiced Rum Tea</figcaption>
+            </figure>
+
+            <figure><!--flex item for rowFlex -->
+              <img src="images/donut.jpg" alt="A tasty looking donut" height="200px" width="300px">
+              <figcaption>Seasonal Donuts</figcaption>
+            </figure>
+
+            <figure><!--flex item for rowFlex -->
+              <img src="images/myrtle.jpg" alt="A picture of tea in a teacup" height="200px" width="300px">
+              <figcaption>Myrtle Ave Tea</figcaption>
+            </figure>
+
+            <figure><!--flex item for rowFlex -->
+              <img src="images/bedford.jpg" alt="A teacup and a jar of sugar" height="200px" width="300px">
+              <figcaption>Bedford Bizzarre Tea</figcaption>
+            </figure>
+
+          </div> <!-- ending rowFlex -->
+
+        </section><!-- ending teaMonth/secondItem -->
+
+        <!-- flex item of columnStack -->
+        <section class="thirdItem">
+          <h1 class="locTitle">Locations</h1>
+          <div class="locListing"><!-- flex parent -->
+            <!-- class location is a flex child but also a flex parent -->
+            <div class="location">
+              <!-- p = flex child -->
+              <p><strong>Downtown</strong><br></p>
+              <p>384 West 4th St<br></p>
+              <p>Suite 108<br></p>
+              <p>Portland, Maine</p>
+            </div>
+
+            <div class="location">
+              <!-- p = flex child -->
+              <p><strong>East Bayside</strong><br></p>
+              <p>3433 Phisherman's Avenue<br></p>
+              <p>(Northwest Corner)<br></p>
+              <p>Portland, Maine</p>
+              </div>
+
+            <div class="location">
+              <!-- p = flex child -->
+              <p><strong>Oakdale</strong><br></p>
+              <p>515 Crescent Avenue<br></p>
+              <p>Second Floor<br></p>
+              <p>Portland, Maine</p>
+              </div>
+              <!-- end of locListing -->
+          </div>
+        </section><!-- end of third item -->
+
+        <!-- flex item of columnStack -->
+        <section class="fourthItem">
+          <h2>The Tea Cozy</h2>
+          <h5>contact@theteacozy.com</h5>
+          <h5>917-555-8904</h5>
+        </section><!-- end of fourth item -->
+
+
+        <!-- flex item of columnStack -->
+        <footer class="fifthItem">
+          <h5>&copy; The Tea Cozy 2018</h5>
+        </footer>
+
+      </div><!-- ending columnStack -->
+
+  </body>
+
+</html>
